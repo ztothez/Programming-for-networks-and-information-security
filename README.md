@@ -5,7 +5,8 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge\&logo=python)
 ![Category](https://img.shields.io/badge/Focus-Network%20Automation-orange?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-Scripting-red?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/Repo-Type-Learning%20Material-success?style=for-the-badge)
+![Repo](https://img.shields.io/badge/Repo--Learning--Material-success?style=for-the-badge)
+
 
 ---
 
