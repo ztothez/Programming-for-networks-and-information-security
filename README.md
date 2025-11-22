@@ -1,171 +1,198 @@
-# **📘 Programming for Networks & Information Security**
+# 📘 Programming for Networks & Information Security
 
-### *Python • Network Automation • JSON/XML • APIs • Security Scripting*
+*Python • Network Automation • JSON/XML • APIs • Security Scripting*
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge\&logo=python)
-![Category](https://img.shields.io/badge/Focus-Network%20Automation-orange?style=for-the-badge)
-![Security](https://img.shields.io/badge/Security-Scripting-red?style=for-the-badge)
-![Repo](https://img.shields.io/badge/Repo--Learning--Material-success?style=for-the-badge)
-
+<img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python" />
+<img src="https://img.shields.io/badge/Focus-Network%20Automation-orange?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Repo--Learning--Material-success?style=for-the-badge" />
 
 ---
 
-## **📖 Overview**
+## 📖 Overview
 
-This repository contains a full learning package designed to teach **Python for networking and information security**.
-It is structured around progressive exercises, lab-style challenges, JSON/XML parsing tasks, and real API-driven mini-applications (ISS tracking, weather queries, Cisco APIC-EM interaction).
+This repository is a collection of exercises and small examples for learning **Python in the context of networking and information security**.
 
----
+The material moves from basic Python syntax to more practical tasks, such as:
 
-# **📂 Repository Structure**
+- working with files
+- parsing JSON and XML
+- using APIs (e.g. ISS tracking, weather data, Cisco APIC-EM)
+- writing small scripts that could be useful in network and security work
 
-## **1. `Activity/` — Core Learning Exercises**
-
-Step-by-step Python progression:
-
-* Python basics (variables, loops, functions)
-* File I/O
-* JSON parsing (multi-stage)
-* XML parsing
-* Networking data structures
-* Error handling
+The idea is that you can open almost any folder, pick a file, and learn one focused thing at a time.
 
 ---
 
-## **2. `Async Code/` — Asynchronous Networking Examples**
+# 📂 Repository Structure
 
-Introduces asynchronous programming (`async/await`) for network automation tasks.
+## 1. `Activity/` — Core Learning Exercises
+
+This folder contains the main step-by-step exercises. They start from very simple scripts and gradually introduce more realistic data and tasks.
+
+Included topics:
+
+- Python basics (variables, lists, dictionaries, loops, functions)
+- File input/output
+- JSON parsing in several stages
+- XML parsing
+- Simple networking-related data structures
+- Basic error handling
+
+You can usually run these directly with:
+
+```bash
+python Activity/some_script.py
+````
 
 ---
 
-## **3. `Build A Python Application/` — Full Mini-Apps**
+## 2. `Async Code/` — Asynchronous Networking Examples
 
-API-driven applications such as:
+Short examples showing how to use `async/await` for tasks such as fetching data over the network.
 
-* Weather App
-* Sunrise/Sunset calculator
-* ISS Tracker (multiple UI versions)
-* General API app template
-* Cisco APIC-EM automation scripts
-
-Includes reusable helpers:
-`my_apic_em_functions.py`, `get_ticket.py`, device/host printing utilities.
+These files are there mainly to introduce the idea of asynchronous programming and to show how it might be useful in automation scripts.
 
 ---
 
-## **4. `SampleCode/` — Reference Snippets**
+## 3. `Build A Python Application/` — Small Applications
 
-Tiny scripts demonstrating specific concepts:
+This folder contains more complete scripts that combine several concepts:
 
-* JSON reading/writing
+* Weather application using a public API
+* Sunrise/sunset calculator
+* ISS (International Space Station) tracker in different versions
+* A small “any API” app template you can adapt to other services
+* Cisco APIC-EM examples for network automation
+
+There are also helper modules, for example:
+
+* `my_apic_em_functions.py` — functions for talking to APIC-EM
+* `get_ticket.py` — obtains an auth ticket from the controller
+* `print_devices.py` / `print_hosts.py` — simple scripts to list devices and hosts
+
+Some scripts use images (`iss.gif`, `map.gif`) to visualize data, for example the ISS on a map using Turtle graphics.
+
+---
+
+## 4. `SampleCode/` — Reference Snippets
+
+This folder is more like a “code notebook”. It includes small, focused examples you can look at when you forget syntax or want a minimal reference.
+
+Examples:
+
+* JSON reading and writing
 * XML parsing
 * File handling
-* Looping and logic patterns
-* Networking structure examples
+* Loops and conditionals
+* Simple functions and data structures used in networking-style problems
+
+These are good to skim if you need a quick reminder of how to do something in Python.
 
 ---
 
-## **5. `SampleApps/` — Small Complete Applications**
+## 5. `SampleApps/` — Small Complete Programs
 
-Ready-to-run practical examples:
+Here you’ll find a few self-contained applications that are slightly more polished than the raw examples:
 
-* Weather API client
-* ISS tracking
-* Network device viewer
+* a basic weather API client
+* an ISS location viewer
+* a simple network device viewer
 
----
-
-## **6. `Test/` — Input Files for Exercises**
-
-Text and structured files used in certain activities.
+They are meant as demonstrations of how you can turn the techniques from `Activity/` and `SampleCode/` into small tools.
 
 ---
 
-# **🧭 Module Relationship Overview**
+## 6. `Test/` — Input Files for Exercises
 
-Below is a human-friendly structure showing how the pieces relate.
+This folder contains text files and other small resources used by some of the exercises, for example:
 
-### **ASCII Overview**
+* files for practicing reading/writing
+* files used to trigger error handling
 
-```
+You normally don’t run anything from here directly; the files are read by scripts in other folders.
+
+---
+
+# 🧭 How the Pieces Fit Together
+
+The folders are meant to build on each other:
+
+```text
 Programming-for-networks-and-information-security
 │
 ├── Activity/
-│   ├── Basics → Variables, Lists, Dicts
-│   ├── Control Flow → If, While, Functions
-│   ├── File I/O → Read/Write
-│   ├── JSON → Progressive Parsing Levels (1–7)
-│   └── XML → XML1–4
+│   ├── Basics → variables, lists, dicts
+│   ├── Control Flow → if, while, functions
+│   ├── File I/O → read/write
+│   ├── JSON → parsing stages (1–7)
+│   └── XML → XML examples 1–4
 │
 ├── Async Code/
-│   └── Async data fetching examples
+│   └── async data fetching examples
 │
 ├── Build A Python Application/
 │   ├── API Apps
 │   │   ├── Weather
 │   │   ├── Sunrise/Sunset
-│   │   └── ISS Tracker (Basic/Input/Turtle)
-│   ├── APIC-EM Network Automation
+│   │   └── ISS Tracker (basic/input/turtle)
+│   ├── APIC-EM network automation
 │   │   ├── get_ticket.py
 │   │   ├── my_apic_em_functions.py
 │   │   └── print_devices / print_hosts
-│   └── Helpers + GIF Map Assets
+│   └── helper files + GIF assets
 │
 ├── SampleCode/
-│   └── Reference examples (JSON/XML/Loops/Functions)
+│   └── reference examples (JSON/XML/loops/functions)
 │
 └── SampleApps/
-    └── Small finished applications
+    └── small finished applications
 ```
 
 ---
 
-# **🎨 Mermaid Diagram — Module/Folder Relationships**
-
-> GitHub and Obsidian both support Mermaid diagrams.
+# 🎨 Mermaid Diagram — Folder Relationships
 
 ```mermaid
 flowchart TD
 
-A[Activity<br>Core Python Exercises] -->|Provides Fundamentals| C[Build a Python Application]
-B[Async Code<br>Async Networking] --> C
-D[SampleCode<br>Reference Snippets] --> C
-E[SampleApps<br>Mini-Applications] --> C
+A[Activity<br/>Core Exercises] -->|Basics| C[Build A Python Application]
+B[Async Code<br/>Async Examples] --> C
+D[SampleCode<br/>Reference] --> C
+E[SampleApps<br/>Mini Apps] --> C
+
 C --> F[APIC-EM Scripts]
 C --> G[ISS Tracker]
-C --> H[Weather/Sunrise API]
+C --> H[Weather / Sunrise APIs]
 ```
 
 ---
 
-# **🚀 Running the Code**
+# 🚀 Running the Code
 
-### **Prerequisites**
+### Prerequisites
 
 * Python **3.8+**
-* Install requests if needed:
+* Some scripts require the `requests` library:
 
-```
+```bash
 pip install requests
 ```
 
----
+### Examples
 
-# **🤖 Examples of Running Key Components**
-
-### **Print network devices from APIC-EM**
+Print network devices from APIC-EM:
 
 ```bash
-python Build\ A\ Python\ Application/print_devices.py
+python "Build A Python Application/print_devices.py"
 ```
 
-### **Run ISS Tracking Application**
+Run one of the ISS tracking examples:
 
 ```bash
-python Build\ A\ Python\ Application/1_3_4_3_Option_3_Create_an_App_for_the_ISS.py
+python "Build A Python Application/1_3_4_3_Option_3_Create_an_App_for_the_ISS.py"
 ```
 
-### **Execute any Activity script**
+Run a JSON exercise from `Activity/`:
 
 ```bash
 python Activity/08_json-parse3.py
@@ -173,28 +200,29 @@ python Activity/08_json-parse3.py
 
 ---
 
-# **🛠 Technologies Used**
+# 🛠 Technologies Used
 
 * Python 3
-* JSON / XML parsing (built-in libraries)
-* REST APIs (requests library)
-* Turtle graphics
-* Asynchronous programming (`asyncio`)
+* JSON / XML (standard libraries)
+* REST APIs (with `requests`)
+* Turtle graphics (for simple visualizations)
+* `asyncio` for asynchronous examples
 
 ---
 
-# **📌 Purpose of This Repository**
+# 📌 What This Repository Is For
 
-Designed as a **teaching + self-study resource** for:
+This repository is meant for:
 
-✔ Networking fundamentals
-✔ Cybersecurity scripting tasks
-✔ API automation
-✔ Parsing structured data
-✔ Building full Python applications
+* students learning Python with a networking/security angle
+* people new to automation who want small, concrete examples
+* anyone who prefers short scripts over large frameworks while learning
+
+The focus is on **understanding what the code does** rather than building production-grade tools.
 
 ---
 
-# **📜 License**
+# 📜 License
 
-Educational / training purposes. Usage depends on your distribution rules.
+Intended for educational and training use.
+Check your course instructions or local policy if you plan to reuse or share parts of the material.
