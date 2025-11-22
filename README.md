@@ -1,16 +1,3 @@
-Here it is — a **clean, modern, stylized, professional README.md** with:
-
-✔ Badges
-✔ Clean visual sections
-✔ A module-relationship diagram (ASCII + Mermaid format)
-✔ CI-style structure
-✔ Professional formatting that fits GitHub
-
-You can **copy/paste directly into README.md**.
-If you want, I can also **insert it directly into the ZIP** or **add more diagrams**.
-
----
-
 # **📘 Programming for Networks & Information Security**
 
 ### *Python • Network Automation • JSON/XML • APIs • Security Scripting*
