@@ -12,7 +12,7 @@ def get_ticket():
         "username": "devnetuser",
         "password": os.environ["PASSWORD"]
     }
-    resp = requests.post(api_url, json.dumps(body_json),  headers=headers,  verify=False)
+    resp = requests.post(api_url, json.dumps(body_json),  headers=headers,  verify=True)
     print("Ticket request status: ", resp.status_code)
     response_json = resp.json()
     serviceTicket = response_json["response"]["serviceTicket"] 
