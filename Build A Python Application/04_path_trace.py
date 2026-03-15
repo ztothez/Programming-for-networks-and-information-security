@@ -1,6 +1,7 @@
 import requests
 import json
 import time
+import os
 from tabulate import *
 
 def get_ticket():
@@ -11,7 +12,7 @@ def get_ticket():
     }
     body_json = {
         "username": "devnetuser",
-        "password": "Cisco123!"
+        "password": os.environ["PASSWORD"]
     }
     resp=requests.post(api_url, json.dumps(body_json),  headers=headers,  verify=False)
     response_json = resp.json()                   
